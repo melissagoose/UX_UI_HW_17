@@ -1,6 +1,6 @@
-.p {
+p {
   font-family: 'Quicksand', sans-serif;
-  font-weight: 300;
+  font-size: 16px;
 }
 
 .navigation {
@@ -42,6 +42,12 @@ nav {
 	margin: 0;
 	padding: 0 10px;
   font-family: 'Quicksand', sans-serif;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  text-decoration: none;
 }
 .heroImg {
 	height: 600px;
@@ -91,6 +97,38 @@ nav {
   text-align: left;
 }
 
+.container {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'quicksand', sans-serif;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.header, .uxskill {
+  padding: 10px;
+  border: #000000 1px solid;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+div .container img {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
 .footer {
 	background-color: #F15442;
 	display: flex;
@@ -108,6 +146,21 @@ nav {
 	color: #F15442;
 
 }
+
+footer ul li a {
+  color: #F15442;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+div .skill1, .skill2, .skill3 {
+
+}
+
+div img .skillimage {
+  
+}
+
 
 .subtitle {
 	width: 500px;
@@ -207,6 +260,50 @@ nav {
 }
 
 .button-2:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.button-3 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #F15442;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #F15442;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Quicksand', sans-serif;  
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  height: 60px;
+  width: 10px;
+  outline: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 300%;
+  will-change: transform;
+}
+
+.button-3:disabled {
+  pointer-events: none;
+}
+
+.button-3:hover {
+  color: #000000;
+  background-color: #F15442;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-3:active {
   box-shadow: none;
   transform: translateY(0);
 }
